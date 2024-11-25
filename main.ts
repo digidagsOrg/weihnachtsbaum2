@@ -24,7 +24,12 @@ let strip = neopixel.create(DigitalPin.P0, 10, NeoPixelMode.RGB)
 strip.setBrightness(50)
 strip.showRainbow(1, 360)
 basic.forever(function () {
-    strip.rotate(1)
-    strip.show()
-    basic.pause(100)
+    if (red == 1 && yellow == 1) {
+        strip.setBrightness(50)
+        strip.rotate(1)
+        strip.show()
+        basic.pause(100)
+    } else {
+        strip.setBrightness(0)
+    }
 })
