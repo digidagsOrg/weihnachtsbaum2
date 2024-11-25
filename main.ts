@@ -20,7 +20,7 @@ let yellow = 0
 let red = 0
 red = 0
 yellow = 0
-let strip = neopixel.create(DigitalPin.P2, 10, NeoPixelMode.RGB)
+let strip = neopixel.create(DigitalPin.P0, 10, NeoPixelMode.RGB)
 strip.setBrightness(50)
 strip.showRainbow(1, 360)
 basic.forever(function () {
